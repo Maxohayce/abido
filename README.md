@@ -29,7 +29,7 @@ postgreSQL, expressJS, reactJS, Node
 
     .
     ├── client                  # Frontend files
-    ├── api                     # REST Api Files
+    ├── api                     # REST Api files
     └── README.md   
 
 ## How to setup project and run locally
@@ -62,7 +62,7 @@ Using npm
 
     npm start
 
-### Start server to test from node
+### Start api to test from node
 
 Using yarn
 
