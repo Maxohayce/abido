@@ -64,6 +64,10 @@ Using npm
 
 ### Start api to test from node
 
+#### CD into the api folder
+
+    cd api
+
 Using yarn
 
     yarn start
