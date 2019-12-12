@@ -28,8 +28,9 @@ postgreSQL, expressJS, reactJS, Node
 ## Top-level directory layout
 
     .
-    ├── client                  # Frontend files
-    ├── api                     # REST Api files
+    ├── ui                          # HTML, CSS & jS files showing design 
+    ├── client                      # Frontend files
+    ├── api                         # REST Api files
     └── README.md   
 
 ## How to setup project and run locally
