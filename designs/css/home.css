@@ -1,0 +1,46 @@
+.switch .carousel-indicators {
+  position: relative;
+}
+
+.switch .carousel-indicators li {
+  text-indent: 0;
+  font-size: 90%;
+
+  transition: box-shadow 0.5s;
+}
+
+.switch .carousel-indicators li.active {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+#featuredIdeas {
+  position: relative;
+  top: -40px;
+}
+
+#footer {
+  position: relative;
+  top: -80px;
+  z-index: -1;
+}
+
+.img-holder {
+  width: 50px;
+  height: 50px;
+}
+
+#experts .card-columns.double-columns {
+  column-count: 1;
+}
+
+@media (max-width: 576px) {
+  .card-columns {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 576px) {
+  #experts .card-columns.double-columns {
+    column-count: 2;
+  }
+}

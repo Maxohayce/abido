@@ -1,0 +1,23 @@
+#header {
+  background: #fff;
+  z-index: 9999;
+  /* box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.025); */
+}
+
+.navbar-brand {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 28px;
+}
+
+#header span {
+  width: 7px;
+  height: 7px;
+}
+
+@media (min-width: 768px) {
+  #header {
+    background: transparent;
+    box-shadow: none;
+  }
+}

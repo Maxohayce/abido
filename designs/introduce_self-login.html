@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Abido</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/5de0804f0f.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/master.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/introduce_self-login.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <nav
+      class="navbar navbar-expand-md fixed-top py-3 m-0 border-0"
+      style="top: -2px"
+      id="header"
+    >
+      <div class="container">
+        <span class="bg-warning rounded-circle mr-1"></span
+        ><a class="navbar-brand" href="./index.html">Abido</a>
+        <div></div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+      </div>
+    </nav>
+
+    <div class="container-fluid h-100">
+      <div class="row h-100 text-center">
+        <div
+          class="col-12 col-md-4 position-fixed d-none d-md-block h-100 bg-primary"
+          id="leftScreen"
+        >
+          <div class="row h-100 align-items-center" id="leftScreenRow">
+            <div class="col p-5 text-white">
+              <h2>Hello Friend!</h2>
+              <p class="my-4">
+                Tell us about you so we could find the peopel for you to collaborate with 
+              </p>
+              <p class="mb-0">Already registered?</p>
+              <button
+                class="screen-button btn px-5 py-2 border border-white text-uppercase text-white rounded-pill"
+              >
+                login
+              </button>
+            </div>
+            <div class="col p-5 text-white d-none">
+              <h2>Welcome Back!</h2>
+              <p class="my-4">
+                Login to stay connected and continue collaborating
+              </p>
+              <p class="mb-0">Not yet registered?</p>
+              <button
+                class="screen-button btn px-5 py-2 border border-white text-uppercase text-white rounded-pill"
+              >
+                get started
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md offset-md-4 h-100 bg-white" id="rightScreen">
+          <div class="row h-100 align-items-center justify-content-around">
+            <div class="col col-md-10 p-5" id="headerDet">
+              <h2 class="mt-5">Get Started on Abido</h2>
+              <p class="d-md-none">Tell us about you so we could find the peopel for you to collaborate with</p>
+              <form class="mt-4">
+                <div class="input-group my-2">
+                  <div class="input-group-prepend border-0 bg-light">
+                    <div
+                      class="input-group-text bg-white border-top-0 border-left-0 border-right-0 rounded-0 border-bottom-primary"
+                    >
+                      <i class="fas fa-user"></i>
+                    </div>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control bg-white border-left-0 border-right-0 border-top-0 rounded-0"
+                    id="exampleInputName"
+                    aria-describedby="nameHelp"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="input-group my-2">
+                  <div class="input-group-prepend border-0 bg-light">
+                    <div
+                      class="input-group-text bg-white border-top-0 border-left-0 border-right-0 rounded-0 border-bottom-primary"
+                    >
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                  </div>
+                  <input
+                    type="email"
+                    class="form-control bg-white border-left-0 border-right-0 border-top-0 rounded-0"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="input-group my-2">
+                  <div class="input-group-prepend border-0 bg-light">
+                    <div
+                      class="input-group-text bg-white border-top-0 border-left-0 border-right-0 rounded-0 border-bottom-primary"
+                    >
+                      <i class="fas fa-lock"></i>
+                    </div>
+                  </div>
+                  <input
+                    type="password"
+                    class="form-control bg-white border-left-0 border-right-0 border-top-0 rounded-0"
+                    id="exampleInputPassword1"
+                    placeholder="Password"
+                  />
+                  <div class="input-group-append border-0 bg-light">
+                    <div
+                      class="input-group-text bg-white border-top-0 border-left-0 border-right-0 rounded-0 border-bottom-primary"
+                    >
+                      <i class="fas fa-eye"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="input-group my-2">
+                  <div class="input-group-prepend border-0 bg-light">
+                    <div
+                      class="input-group-text bg-white border-top-0 border-left-0 border-right-0 rounded-0 border-bottom-primary"
+                    >
+                      <i class="fas fa-lock"></i>
+                    </div>
+                  </div>
+                  <input
+                    type="password"
+                    class="form-control bg-white border-left-0 border-right-0 border-top-0 rounded-0"
+                    id="exampleInputPassword2"
+                    placeholder="Confirm Password"
+                  />
+                  <div class="input-group-append border-0 bg-light">
+                    <div
+                      class="input-group-text bg-white border-top-0 border-left-0 border-right-0 rounded-0 border-bottom-primary"
+                    >
+                      <i class="fas fa-eye"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="input-group my-2">
+                  <div class="input-group-prepend border-0 bg-light">
+                    <div
+                      class="input-group-text bg-white border-top-0 border-left-0 border-right-0 rounded-0 border-bottom-primary"
+                    >
+                      <i class="fas fa-align-justify"></i>
+                    </div>
+                  </div>
+                  <select
+                    class="form-control bg-white border-left-0 border-right-0 border-top-0 rounded-0"
+                    id="exampleInputCategory"
+                    aria-describedby="categoryHelp"
+                  >
+                    <option value="" selected disabled="disabled"
+                      >Select Your Category</option
+                    >
+                    <option value="join">Join A Team</option>
+                    <option value="recruit"
+                      >Recruit Team Members</option
+                    ></select
+                  >
+                </div>
+                <button
+                  class="m-3 btn btn-md-lg px-5 py-2 border border-white text-white rounded-pill btn-success text-uppercase"
+                >
+                  get started
+                </button>
+                <button
+                  class="d-md-none screen-button btn btn-md-lg text-primary border-0 shadow-0 px-5 py-2 border text-uppercase rounded-pill"
+                >
+                  login
+                </button>
+              </form>
+            </div>
+            <div class="col col-md-10 col-lg-8 col-xl-6 p-5 d-none">
+              <h2 class="mt-5">Login to Abido</h2>
+              <p class="d-md-none">
+                Login to stay connected and continue collaborating
+              </p>
+              <form class="mt-4">
+                <div class="input-group my-2">
+                  <div class="input-group-prepend border-0 bg-light">
+                    <div
+                      class="input-group-text bg-white border-top-0 border-left-0 border-right-0 rounded-0 border-bottom-primary"
+                    >
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                  </div>
+                  <input
+                    type="email"
+                    class="form-control bg-white border-left-0 border-right-0 border-top-0 rounded-0"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter email"
+                  />
+                </div>
+                <div class="input-group my-2">
+                  <div class="input-group-prepend border-0 bg-light">
+                    <div
+                      class="input-group-text bg-white border-top-0 border-left-0 border-right-0 rounded-0 border-bottom-primary"
+                    >
+                      <i class="fas fa-lock"></i>
+                    </div>
+                  </div>
+                  <input
+                    type="password"
+                    class="form-control bg-white border-left-0 border-right-0 border-top-0 rounded-0"
+                    id="exampleInputPassword1"
+                    placeholder="Password"
+                  />
+                  <div class="input-group-append border-0 bg-light">
+                    <div
+                      class="input-group-text bg-white border-top-0 border-left-0 border-right-0 rounded-0 border-bottom-primary"
+                    >
+                      <i class="fas fa-eye"></i>
+                    </div>
+                  </div>
+                </div>
+                <p class="text-left">
+                  <small href="">Forgot your password?</small>
+                </p>
+                <button
+                  class="m-3 btn btn-md-lg px-5 py-2 border border-white text-white rounded-pill btn-success text-uppercase"
+                >
+                  login
+                </button>
+                <button
+                  class="d-md-none screen-button btn btn-md-lg text-primary border-0 shadow-0 px-5 py-2 border text-uppercase rounded-pill"
+                >
+                  get started
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom JS -->
+    <script src="./js/master.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/introduce_self-login.js"></script>
+  </body>
+</html>

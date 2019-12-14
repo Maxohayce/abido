@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Abido</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/5de0804f0f.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/master.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+  </head>
+  <body>
+    <svg
+      style="position: absolute;right: 0;top: 0;width: 47.7%;height: 90%"
+      class=" d-none d-lg-block"
+    >
+      <defs>
+        <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:rgb(4,26,169);stop-opacity:1" />
+          <stop offset="100%" style="stop-color:rgb(3,24,185);stop-opacity:1" />
+        </linearGradient>
+      </defs>
+
+      <path d="M0 0 L0 435 S500 610 1000 400 L1000 0 Z" fill="url(#grad3)" />
+    </svg>
+    <!-- Header -->
+    <nav
+      class="navbar navbar-expand-md fixed-top py-3 m-0 border-0"
+      style="top: -2px"
+      id="header"
+    >
+      <div class="container">
+        <span class="bg-warning rounded-circle mr-1"></span
+        ><a class="navbar-brand" href="#">Abido</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-stream"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto text-secondary">
+            <li class="nav-item">
+              <a class="nav-link" href="#howItWorks">How It Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ideas">Browse Ideas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experts">Browse Experts</a>
+            </li>
+          </ul>
+          <form class="form">
+            <button
+              class="btn btn-primary mb-3 my-md-0 mx-md-2 shadow-sm d-block d-md-inline"
+              onClick="linkCollaborate(this)"
+            >
+              Start Collaborating
+            </button>
+            <button
+              class="btn text-success bg-white mx-md-2 shadow-sm d-block d-md-inline"
+              onClick="linkCollaborate(this)"
+            >
+              Login
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid bg-white pt-5 pb-0 mb-0">
+      <div class="container pt-5">
+        <div class="row align-items-center pt-5 pt-lg-3" id="headerDet">
+          <div class="col-12 col-lg-6">
+            <hgroup class="mb-4">
+              <h1 class="display-4">
+                Collaborate to bring your idea to life
+              </h1>
+              <h4>
+                Build <em class="text-warning">smart, fast & without stress</em>
+              </h4>
+            </hgroup>
+
+            <p class="lead mb-0">
+                Find the best experts to collaborate with to bring your idea to life
+            </p>
+            <button class="btn btn-success mr-4 mt-3 shadow-sm btn-lg" onClick="linkCollaborate(this)">
+              Recruit Expert(s)
+            </button>
+            <button
+              class="btn bg-white text-success mr-4 mt-3 shadow-sm btn-lg" onClick="linkCollaborate(this)"
+            >
+              Join An Idea
+            </button>
+          </div>
+          <div class="col-lg-6 d-none d-lg-block">
+            <img src="./img/home/collabo.png" alt="" class="w-100" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-5 switch" id="howItWorks">
+      <div class="row py-4">
+        <div class="col text-center"><h5>Only 5 steps to get started!</h5></div>
+      </div>
+
+      <div
+        id="carouselExampleIndicators"
+        class="carousel carousel-steps slide"
+        data-ride="carousel"
+      >
+        <ol
+          class="carousel-indicators border border-light just-width center text-uppercase"
+        >
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active just-width m-0 pb-3 px-4 rounded-0 text-center just-height"
+          >
+            recruit
+          </li>
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="1"
+            class="just-width m-0 pb-3 px-4 rounded-0 text-center just-height"
+          >
+            join
+          </li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row py-4 justify-content-start">
+              <div class="col-12 col-sm-8 col-md-6">
+                <div class="row align-items-center">
+                  <div class="col text-center">
+                    <i class="fas fa-bullhorn fa-5x text-success"></i>
+                  </div>
+                  <div class="col-7 col-sm-8 col-lg-9">
+                    <hgroup class="row text-primary">
+                      <h4 class="col-2 text-center">01.</h4>
+                      <h4 class="col">Introduce Yourself</h4>
+                    </hgroup>
+                    <p>
+                      Tell us about you so we could find the right expert(s)
+                      for you to collaborate with
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row py-4 text-right justify-content-end">
+              <div class="col-12 col-sm-8 col-md-6">
+                <div class="row align-items-center">
+                  <div class="col-7 col-sm-8 col-lg-9">
+                    <hgroup class="row text-primary text-right">
+                      <h4 class="col-5 col-sm-7 col-lg-8 p-0">
+                        02.
+                      </h4>
+                      <h4 class="col p-0">
+                        Introduce Your Idea
+                      </h4>
+                    </hgroup>
+                    <p>
+                      Using the NABC model, tell us about your idea, the sector it is intended for and what stage it is at.
+                    </p>
+                    <small>Don't worry, your idea is safe with us</small>
+                  </div>
+                  <div class="col text-center">
+                    <i class="far fa-lightbulb fa-5x text-success"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row py-4 justify-content-start">
+              <div class="col-12 col-sm-8 col-md-6">
+                <div class="row align-items-center">
+                  <div class="col text-center">
+                    <i class="fas fa-vials fa-5x text-success"></i>
+                  </div>
+                  <div class="col-7 col-sm-8 col-lg-9">
+                    <hgroup class="row text-primary">
+                      <h4 class="col-2 text-center">03.</h4>
+                      <h4 class="col">Idea Evaluation</h4>
+                    </hgroup>
+                    <p>
+                      We'll evaluate your idea to ensure it is yours and it doesn't already exist on our platform
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row py-4 justify-content-end">
+              <div class="col-12 col-sm-8 col-md-6">
+                <div class="row align-items-center">
+                  <div class="col-7 col-sm-8 col-lg-9">
+                    <hgroup class="row text-primary text-right">
+                      <h4 class="col-5 col-sm-7 p-0">04.</h4>
+                      <h4 class="col p-0">Get Suggestions</h4>
+                    </hgroup>
+                    <p>
+                      Upon approval, you will get suggestions from our smart system for the best experts
+                      to collaborate with based on your provided info.
+                    </p>
+                  </div>
+                  <div class="col text-center">
+                    <i class="fas fa-atom fa-5x text-success"></i>
+                  </div>
+                </div>
+                <!-- <svg
+            style="position: absolute;z-index: -1;left: -24%;top: -30%;width: 50%;height: 160%"
+            class="mt-4 d-none d-lg-block"
+          >
+            <defs>
+              <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop
+                  offset="0%"
+                  style="stop-color:rgb(253,253,253);stop-opacity:1"
+                />
+                <stop
+                  offset="100%"
+                  style="stop-color:rgb(243,244,250);stop-opacity:1"
+                />
+              </linearGradient>
+            </defs>
+
+            <path d="M0 0 L0 140 L215 140 Q285 70 215 0 Z" fill="url(#grad4)" />
+          </svg> -->
+              </div>
+            </div>
+
+            <div class="row py-4 justify-content-start">
+              <div class="col-12 col-sm-8 col-md-6">
+                <div class="row align-items-center">
+                  <div class="col text-center">
+                    <i class="fas fa-users fa-5x text-success"></i>
+                  </div>
+                  <div class="col-7 col-sm-8 col-lg-9">
+                    <hgroup class="row text-primary">
+                      <h4 class="col-2 text-center">
+                        05.
+                      </h4>
+                      <h4 class="col">Collaborate</h4>
+                    </hgroup>
+                    <p>
+                      Start collaborating based on desired positions and level of expertise.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row py-4 justify-content-start">
+              <div class="col-12 col-sm-8 col-md-6">
+                <div class="row align-items-center">
+                  <div class="col text-center">
+                    <i class="fas fa-bullhorn fa-5x text-success"></i>
+                  </div>
+                  <div class="col-7 col-sm-8 col-lg-9">
+                    <hgroup class="row text-primary">
+                      <h4 class="col-2 text-center">01.</h4>
+                      <h4 class="col">Introduce Yourself</h4>
+                    </hgroup>
+                    <p>
+                      Tell us about you so we could find the right idea(s)
+                      for you to collaborate with
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row py-4 text-right justify-content-end">
+              <div class="col-12 col-sm-8 col-md-6">
+                <div class="row align-items-center">
+                  <div class="col-7 col-sm-8 col-lg-9">
+                    <hgroup class="row text-primary text-right">
+                      <h4 class="col-5 col-sm-7 col-lg-8 p-0">
+                        02.
+                      </h4>
+                      <h4 class="col p-0">
+                        Introduce Your Skill
+                      </h4>
+                    </hgroup>
+                    <p>
+                      Choose your best skill and competent stack/specialisation.
+                    </p>
+                  </div>
+                  <div class="col text-center">
+                    <!-- <i class="fas fa-cog fa-5x text-success"></i> -->
+                    <i class="fas fa-hand-holding fa-5x text-success"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row py-4 justify-content-start">
+              <div class="col-12 col-sm-8 col-md-6">
+                <div class="row align-items-center">
+                  <div class="col text-center">
+                    <i class="fas fa-vials fa-5x text-success"></i>
+                  </div>
+                  <div class="col-7 col-sm-8 col-lg-9">
+                    <hgroup class="row text-primary">
+                      <h4 class="col-2 text-center">03.</h4>
+                      <h4 class="col">Skill Evaluation</h4>
+                    </hgroup>
+                    <p>
+                      We'll evaluate your skill and said stack/specialisation to determine your level of expertise
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row py-4 justify-content-end">
+              <div class="col-12 col-sm-8 col-md-6">
+                <div class="row align-items-center">
+                  <div class="col-7 col-sm-8 col-lg-9">
+                    <hgroup class="row text-primary text-right">
+                      <h4 class="col-5 col-sm-7 p-0">04.</h4>
+                      <h4 class="col p-0">Get Suggestions</h4>
+                    </hgroup>
+                    <p>
+                      After evaluation, you will get suggestions from our smart system for the best idea(s)
+                      to collaborate with based on your provided info and level of expertise.
+                    </p>
+                  </div>
+                  <div class="col text-center">
+                    <i class="fas fa-atom fa-5x text-success"></i>
+                  </div>
+                </div>
+                <!-- <svg
+            style="position: absolute;z-index: -1;left: -24%;top: -30%;width: 50%;height: 160%"
+            class="mt-4 d-none d-lg-block"
+          >
+            <defs>
+              <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop
+                  offset="0%"
+                  style="stop-color:rgb(253,253,253);stop-opacity:1"
+                />
+                <stop
+                  offset="100%"
+                  style="stop-color:rgb(243,244,250);stop-opacity:1"
+                />
+              </linearGradient>
+            </defs>
+
+            <path d="M0 0 L0 140 L215 140 Q285 70 215 0 Z" fill="url(#grad4)" />
+          </svg> -->
+              </div>
+            </div>
+
+            <div class="row py-4 justify-content-start">
+              <div class="col-12 col-sm-8 col-md-6">
+                <div class="row align-items-center">
+                  <div class="col text-center">
+                    <i class="fas fa-users fa-5x text-success"></i>
+                  </div>
+                  <div class="col-7 col-sm-8 col-lg-9">
+                    <hgroup class="row text-primary">
+                      <h4 class="col-2 text-center">
+                        05.
+                      </h4>
+                      <h4 class="col">Collaborate</h4>
+                    </hgroup>
+                    <p>
+                      Start collaborating based on preferred sector and funding stage.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn btn-primary btn-lg my-3 shadow-sm w-100"
+              onClick="linkCollaborate(this)"
+            >
+              Start Collaborating
+            </button>
+    </div>
+
+    
+
+    <div class="container-fluid bg-gradient-primary p-5" id="ideas">
+      <div class="row">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center text-white">
+              <h4 class="mb-4">Join some of our best ideas</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="featuredIdeas">
+      <div class="row">
+        <div class="col-12 text-center">
+          <div class="card-columns">
+            <div class="card bg-white shadow-sm mb-3 rounded-0 p-4">
+              <h5 class="m-0">Idea 1</h5>
+            </div>
+            <div class="card bg-white shadow-sm mb-3 rounded-0 p-4">
+              <h5 class="m-0">Idea 2</h5>
+            </div>
+            <div class="card bg-white shadow-sm mb-3 rounded-0 p-4">
+              <h5 class="m-0">Idea 3</h5>
+            </div>
+            <div class="card bg-white shadow-sm mb-3 rounded-0 p-4">
+              <h5 class="m-0">Idea 4</h5>
+            </div>
+            <div class="card bg-white shadow-sm mb-3 rounded-0 p-4">
+              <h5 class="m-0">Idea 5</h5>
+            </div>
+            <div class="card bg-white shadow-sm mb-3 rounded-0 p-4">
+              <h5 class="m-0">Idea 6</h5>
+            </div>
+          </div>
+          <p class="text-success text-uppercase mt-4" onClick="ideaSearch()">More ideas</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-5" id="experts">
+      <div class="row">
+        <div class="col-12">
+          <h4 class="text-center mb-4">Featured Experts</h4>
+          <div class="card-columns double-columns mt-4">
+            <div class="card mb-3 shadow-sm p-4">
+              <div>
+                <div
+                  class="img-holder border border-light rounded-circle float-left mr-3"
+                >
+                  <img src="./img/home/collabo.png" alt="" class="img-fluid" />
+                </div>
+                <div class="float-left">
+                  <hgroup>
+                    <h5>Amaraegbu Jedidiah</h5>
+                    <h6>Full-Stack Web Developer</h6>
+                  </hgroup>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                repellendus et totam vero nulla, quas quae nobis quam voluptate
+                qui, rem culpa neque optio iste voluptatibus itaque quos illo
+                doloribus!
+              </p>
+            </div>
+            <div class="card mb-3 shadow-sm p-4">
+              <div>
+                <div
+                  class="img-holder border border-light rounded-circle float-left mr-3"
+                >
+                  <img src="./img/home/collabo.png" alt="" class="img-fluid" />
+                </div>
+                <div class="float-left">
+                  <hgroup>
+                    <h5>Amaraegbu Jedidiah</h5>
+                    <h6>Full-Stack Web Developer</h6>
+                  </hgroup>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                repellendus et totam vero nulla, quas quae nobis quam voluptate
+                qui, rem culpa neque optio iste voluptatibus itaque quos illo
+                doloribus!
+              </p>
+            </div>
+            <div class="card mb-3 shadow-sm p-4">
+              <div>
+                <div
+                  class="img-holder border border-light rounded-circle float-left mr-3"
+                >
+                  <img src="./img/home/collabo.png" alt="" class="img-fluid" />
+                </div>
+                <div class="float-left">
+                  <hgroup>
+                    <h5>Amaraegbu Jedidiah</h5>
+                    <h6>Full-Stack Web Developer</h6>
+                  </hgroup>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                repellendus et totam vero nulla, quas quae nobis quam voluptate
+                qui, rem culpa neque optio iste voluptatibus itaque quos illo
+                doloribus!
+              </p>
+            </div>
+            <div class="card mb-3 shadow-sm p-4">
+              <div>
+                <div
+                  class="img-holder border border-light rounded-circle float-left mr-3"
+                >
+                  <img src="./img/home/collabo.png" alt="" class="img-fluid" />
+                </div>
+                <div class="float-left">
+                  <hgroup>
+                    <h5>Amaraegbu Jedidiah</h5>
+                    <h6>Full-Stack Web Developer</h6>
+                  </hgroup>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                repellendus et totam vero nulla, quas quae nobis quam voluptate
+                qui, rem culpa neque optio iste voluptatibus itaque quos illo
+                doloribus!
+              </p>
+            </div>
+          </div>
+          <p class="text-success text-uppercase mt-4 text-center" onClick="expertSearch()">More experts</p>
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h4 class=" mb-4">Join our newsletter now!</h4>
+          <form
+            action=""
+            class="center form-inline bg-white just-width p-3 shadow border border-light"
+          >
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text bg-white border-0">
+                  <i class="fas fa-envelope text-primary"></i>
+                </div>
+              </div>
+              <input
+                type="text"
+                class="form-control border-0"
+                placeholder="example@gmail.com"
+              />
+            </div>
+            <button class="btn bg-white text-success ml-4">
+              JOIN
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-gradient-primary pt-4" id="footer">
+      <div class="row">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center text-white">
+              <p class="my-4">ABIDO 2019</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div id="howItWorks" class="">
+      <p>
+        Are you an entrepreneur?<br />
+        Are you working at a slow & difficult rate to turn your idea into a
+        product that may or may not fly?<br />Then, come collaborate with the
+        right set of people to bring their idea to life
+      </p>
+      <p>
+        Do you have the <strong>heart</strong> (passion and inspiration),
+        <strong>head</strong> (knowledge of the process and how to get things
+        done), <strong>hand</strong>(willingness and capability to get things
+        done) and <strong>home</strong>(moral support and advice) to get things
+        done?<br />
+        Then, come collaborate with our entrepreneurs to bring awesome ideas to
+        life.
+      </p>
+    </div> -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom JS -->
+    <script src="./js/header.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/master.js"></script>
+  </body>
+</html>

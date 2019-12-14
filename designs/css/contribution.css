@@ -1,0 +1,23 @@
+.skill-block .btn,
+#subSelector .pointer {
+  background: #f7f7f7 !important;
+  color: #d0d0d0 !important;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: bold;
+}
+
+.skill-block .btn.active,
+.skill-block .btn:hover,
+#subSelector .pointer.active,
+#subSelector .pointer:hover {
+  background: #fafafa !important;
+  color: #0ba403 !important;
+}
+
+#subSelector {
+  z-index: 99999999999 !important;
+  right: 0;
+  top: 0;
+}

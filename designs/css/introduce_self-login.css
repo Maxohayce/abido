@@ -1,0 +1,43 @@
+#header .navbar-brand {
+  /* color: #fff !important */
+}
+
+#leftScreen,
+#rightScreen {
+  transition: all 0.7s ease-out;
+}
+
+#leftScreen {
+  left: 0;
+  overflow: hidden;
+  z-index: 9;
+}
+
+#leftScreenRow {
+  position: relative;
+  left: 0;
+}
+
+#leftScreen.moved {
+  left: 50%;
+}
+
+#rightScreen.moved {
+  left: 0%;
+}
+
+@media (min-width: 768px) {
+  #leftScreen.moved {
+    left: 66.66%;
+    /* z-index: 9; */
+  }
+
+  #rightScreen.moved {
+    left: -33.33%;
+  }
+
+  .screen-button.activated {
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+  }
+}
