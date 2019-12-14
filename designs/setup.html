@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Abido</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/5de0804f0f.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/master.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/introduce_self-login.css" />
+    <link rel="stylesheet" href="./css/setup.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <nav
+      class="navbar navbar-expand-md fixed-top py-3 m-0 border-0"
+      style="top: -2px"
+      id="header"
+    >
+      <div class="container">
+        <span class="bg-warning rounded-circle mr-1"></span
+        ><a class="navbar-brand" href="./index.html">Abido</a>
+        <div></div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+      </div>
+    </nav>
+
+    <div class="container-fluid h-100">
+      <div class="row h-100 text-center">
+        <div
+          class="col-12 col-md-4 position-fixed d-none d-md-block h-100 bg-primary"
+          id="leftScreen"
+        >
+          <div class="row h-100 align-items-center" id="leftScreenRow">
+            <div class="col p-5 text-white">
+              <h2>Introduce Your Idea!</h2>
+              <p>
+                Using the NABC model, tell us about your idea and what stage it
+                is at.
+              </p>
+              <small>Don't worry, your idea is safe with us</small>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-12 col-md offset-md-4 h-100 bg-white switch"
+          id="rightScreen"
+        >
+          <div class="row h-100 align-items-center justify-content-around">
+            <div
+              id="carouselSetup"
+              class="col carousel carousel-steps slide p-5"
+              data-ride="carousel"
+              data-interval="false"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item py-5 active">
+                  <h2>NABC Model</h2>
+                  <p class="d-md-none">
+                    Using the NABC model, tell us about your idea.
+                  </p>
+                  <small class="d-md-none"
+                    >Don't worry, your idea is safe with us</small
+                  >
+                  <form class="mt-4 text-left">
+                    <div class="input-group">
+                      <textarea
+                        class="form-control bg-white border-left-0 border-right-0 border-top-0 rounded-0"
+                        name=""
+                        id=""
+                        rows="5"
+                        placeholder="Need"
+                      ></textarea>
+                    </div>
+                    <small class="mb-2"
+                      >Tell us about the need your idea seeks to address</small
+                    >
+                    <div class="input-group">
+                      <textarea
+                        class="form-control bg-white border-left-0 border-right-0 border-top-0 rounded-0"
+                        name=""
+                        id=""
+                        rows="5"
+                        placeholder="Approach"
+                      ></textarea>
+                    </div>
+                    <small class="mb-2"
+                      >Tell us about your unique approach to the above
+                      need</small
+                    >
+                    <div class="input-group">
+                      <textarea
+                        class="form-control bg-white border-left-0 border-right-0 border-top-0 rounded-0"
+                        name=""
+                        id=""
+                        rows="5"
+                        placeholder="Benefit"
+                      ></textarea>
+                    </div>
+                    <small class="mb-2"
+                      >Tell us about the unfair edge/advantages your approach
+                      has</small
+                    >
+                    <div class="input-group">
+                      <textarea
+                        class="form-control bg-white border-left-0 border-right-0 border-top-0 rounded-0"
+                        name=""
+                        id=""
+                        rows="5"
+                        placeholder="Competition"
+                      ></textarea>
+                    </div>
+                    <small class="mb-2"
+                      >List names of already existing solutions to the above
+                      need
+                    </small>
+
+                    <button
+                      data-target="#carouselSetup"
+                      data-slide-to="1"
+                      class="float-right m-3 btn btn-md-lg px-5 py-2 border border-white text-white rounded-pill btn-primary text-uppercase"
+                    >
+                      next
+                    </button>
+                    <div class="clear"></div>
+                  </form>
+                </div>
+                <div class="carousel-item">
+                  <h2>Funding</h2>
+                  <p>Select the range of maximum funding received so far</p>
+
+                  <div class="card-columns mt-4 text-uppercase">
+                    <div
+                      class="card card-primary pointer"
+                      onclick="makeActive(this)"
+                    >
+                      <div
+                        class="card-header bg-transparent text-left border-0"
+                      >
+                        <small class="font-weight-bold">PRE-seed</small>
+                      </div>
+                      <div class="card-body">
+                        <h1 class="card-title">
+                          <span class="text-lowercase">less than</span>
+                          $5k
+                        </h1>
+                      </div>
+                    </div>
+                    <div
+                      class="card card-primary pointer"
+                      onclick="makeActive(this)"
+                    >
+                      <div
+                        class="card-header bg-transparent text-left border-0"
+                      >
+                        <small class="font-weight-bold">Seed</small>
+                      </div>
+                      <div class="card-body">
+                        <h1 class="card-title">
+                          $50k <span class="text-lowercase">to</span> $3m
+                        </h1>
+                      </div>
+                    </div>
+                    <div
+                      class="card card-primary pointer"
+                      onclick="makeActive(this)"
+                    >
+                      <div
+                        class="card-header bg-transparent text-left border-0"
+                      >
+                        <small class="font-weight-bold">series a</small>
+                      </div>
+                      <div class="card-body">
+                        <h1 class="card-title">
+                          $3m <span class="text-lowercase">to</span> $15M
+                        </h1>
+                      </div>
+                    </div>
+                    <div
+                      class="card card-primary pointer"
+                      onclick="makeActive(this)"
+                    >
+                      <div
+                        class="card-header bg-transparent text-left border-0"
+                      >
+                        <small class="font-weight-bold">series b</small>
+                      </div>
+                      <div class="card-body">
+                        <h1 class="card-title">
+                          $15m <span class="text-lowercase">to</span> $30m
+                        </h1>
+                      </div>
+                    </div>
+                    <div
+                      class="card card-primary pointer"
+                      onclick="makeActive(this)"
+                    >
+                      <div
+                        class="card-header bg-transparent text-left border-0"
+                      >
+                        <small class="font-weight-bold">series c</small>
+                      </div>
+                      <div class="card-body">
+                        <h1 class="card-title">
+                          $30m <span class="text-lowercase">to</span> $50m
+                        </h1>
+                      </div>
+                    </div>
+                    <div
+                      class="card card-primary pointer"
+                      onclick="makeActive(this)"
+                    >
+                      <div
+                        class="card-header bg-transparent text-left border-0"
+                      >
+                        <small class="font-weight-bold">series d</small>
+                      </div>
+                      <div class="card-body">
+                        <h1 class="card-title">
+                          $50m
+                          <span class="text-lowercase">to</span> $100m
+                        </h1>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button
+                    data-target="#carouselSetup"
+                    data-slide-to="0"
+                    class="float-left m-3 btn btn-md-lg px-5 py-2 border border-white text-white rounded-pill btn-primary text-uppercase"
+                  >
+                    previous
+                  </button>
+                  <button
+                    class="float-right m-3 btn btn-md-lg px-5 py-2 border border-white text-white rounded-pill btn-primary text-uppercase"
+                  >
+                    continue
+                  </button>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom JS -->
+    <script src="./js/master.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/setup.js"></script>
+  </body>
+</html>
