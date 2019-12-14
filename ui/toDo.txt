@@ -1,3 +1,0 @@
--->Home
--Have Recruit/Join cycle only once
--Have contribution hand rotate to face inside  

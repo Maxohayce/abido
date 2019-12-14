@@ -28,7 +28,7 @@ postgreSQL, expressJS, reactJS, Node
 ## Top-level directory layout
 
     .
-    ├── ui                          # HTML, CSS & jS files showing design 
+    ├── designs                          # HTML, CSS & jS files showing design 
     ├── client                      # Frontend files
     ├── api                         # REST Api files
     └── README.md   
