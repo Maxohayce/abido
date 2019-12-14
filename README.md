@@ -23,7 +23,7 @@ postgreSQL, expressJS, reactJS, Node
 - To enable scalable start-up entrepreneurs, with funding, realise their market-ready quality solutions in lesser time with lesser stress by collaborating
 - To help scalable start-up entrepreneurs, with funding, have faster and better ROI (return on investment)
 - To reward expert freelancers with digital skills for work done by providing them with quality job opportunities
-- To promote understanding and good working relationship among businesses by providing scalable start-up entrepreneurs and expert freelancers with digital skills people, with personlity types, that they can freely collaborate with.
+- To promote understanding and good working relationship among businesses by providing scalable start-up entrepreneurs and expert freelancers with digital skills people, with personlity types, that they can freely collaborate with
 
 ## Top-level directory layout
 
